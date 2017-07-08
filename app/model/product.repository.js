@@ -22,8 +22,8 @@ var ProductRepository = (function () {
                 .filter(function (c, index, array) { return array.indexOf(c) == index; }).sort();
         });
     }
-    ProductRepository.prototype.getProducts = function (cateogry) {
-        if (cateogry === void 0) { cateogry = null; }
+    ProductRepository.prototype.getProducts = function (category) {
+        if (category === void 0) { category = null; }
         return this.products
             .filter(function (p) { return category == null || category == p.category; });
     };

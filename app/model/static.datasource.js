@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var product_model_1 = require("./product.model");
 var Observable_1 = require("rxjs/Observable");
-require("rxjs/add/observable/form");
+require("rxjs/add/observable/from");
 var StaticDataSource = (function () {
     function StaticDataSource() {
         this.products = [
